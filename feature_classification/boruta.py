@@ -1,7 +1,5 @@
-from sklearn.datasets import load_diabetes
 from sklearn.ensemble import RandomForestRegressor
 from boruta import BorutaPy
-import pandas as pd
 import numpy as np
 
 # TODO: load dataset and define them in terms of X and y
