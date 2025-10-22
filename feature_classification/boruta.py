@@ -8,6 +8,7 @@ import numpy as np
 model = RandomForestRegressor(n_estimators=100, max_depth=5, random_state=42)
 
 # using python's Boruta's algorithm
+# TODO: tune Boruta's parameters
 feat_selector = BorutaPy(
     verbose=2,
     estimator=model,
