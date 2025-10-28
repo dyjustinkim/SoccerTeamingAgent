@@ -60,6 +60,7 @@ df['Name'] = [r[1] for r in results]
 
 # We will make sure to process only the numeric columns for our Boruta training
 # First, replace every '-' value with np.nan, since numpy cannot process '-' values
+pd.set_option('future.no_silent_downcasting', True)
 numeric_df = df.replace('-', np.nan)
 string_columns = ['Player', 'Player.1', 'Name', 'Position']
 
@@ -96,6 +97,8 @@ print(f"Confirmed features: {confirmed}")
 print(f"Weak features: {weak}")
 print(f"Rejected features: {rejected}")
 
+# Print out distribution of the positions relative to the confirmed features
+# (What is the score of the features for each position)
 df_confirmed = df[['Target'] + list(confirmed)].copy()
 
 for c in confirmed:
