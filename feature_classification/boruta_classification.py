@@ -102,4 +102,5 @@ for c in confirmed:
     df_confirmed[c] = pd.to_numeric(df_confirmed[c], errors='coerce')
 
 summary = df_confirmed.groupby('Target')[confirmed].mean().T.fillna(0)
+df_confirmed.to_csv("boruta_confirmed_features.csv", index=False) #Save boruta features as csv
 print(f'Summary: {summary}')
