@@ -20,6 +20,7 @@ def get_position_and_name(player_data):
 
     position, name = '', ''
 
+    # extract position and name from player data
     position = player_data[-1] if len(player_data) > 1 else 'N/A'
     name_arr = player_data[:-1] if len(player_data) > 1 else player_data
     name = ' '.join(n for n in name_arr if not n.isnumeric())
@@ -54,12 +55,14 @@ def get_position_and_name(player_data):
 
     return position, name
 
+# assign them as the new position and name columns
 results = [get_position_and_name(player) for player in df['Player.1']]
 df['Position'] = [r[0] for r in results]
 df['Name'] = [r[1] for r in results]
 
 # We will make sure to process only the numeric columns for our Boruta training
 # First, replace every '-' value with np.nan, since numpy cannot process '-' values
+pd.set_option('future.no_silent_downcasting', True)
 numeric_df = df.replace('-', np.nan)
 string_columns = ['Player', 'Player.1', 'Name', 'Position']
 
@@ -82,7 +85,7 @@ rf = RandomForestClassifier(n_estimators=1000, random_state=42, n_jobs=-1)
 boruta_selector = BorutaPy(rf, n_estimators='auto', random_state=42, verbose=2, max_iter=200)
 boruta_selector.fit(X, y)
 
-# Get feature importance results
+# Get feature importance results based on Boruta flags
 confirmed = np.array(feature_cols)[boruta_selector.support_]
 weak = np.array(feature_cols)[boruta_selector.support_weak_]
 rejected = []
@@ -94,13 +97,15 @@ rejected = np.array(rejected)
 
 print(f"Confirmed features: {confirmed}")
 print(f"Weak features: {weak}")
+print(f"Confirmed and weak features: {confirmed + weak}")
 print(f"Rejected features: {rejected}")
 
-df_confirmed = df[['Target'] + list(confirmed)].copy()
+# Print out distribution of the positions relative to the confirmed and weak features
+# (What is the score of the features for each position)
+df_confirmed_and_weak = df[['Target'] + list(confirmed) + list(weak)].copy()
 
 for c in confirmed:
-    df_confirmed[c] = pd.to_numeric(df_confirmed[c], errors='coerce')
+    df_confirmed_and_weak[c] = pd.to_numeric(df_confirmed_and_weak[c], errors='coerce')
 
-summary = df_confirmed.groupby('Target')[confirmed].mean().T.fillna(0)
-df_confirmed.to_csv("boruta_confirmed_features.csv", index=False) #Save boruta features as csv
+summary = df_confirmed_and_weak.groupby('Target')[confirmed].mean().T.fillna(0)
 print(f'Summary: {summary}')
