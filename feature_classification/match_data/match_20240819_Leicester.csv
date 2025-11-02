@@ -1,0 +1,12 @@
+Player,#,Nation,Pos,Age,Min,Performance_Gls,Performance_Ast,Performance_PK,Performance_PKatt,Performance_Sh,Performance_SoT,Performance_CrdY,Performance_CrdR,Performance_Touches,Performance_Tkl,Performance_Int,Performance_Blocks,Expected_xG,Expected_npxG,Expected_xAG,SCA_SCA,SCA_GCA,Passes_Cmp,Passes_Att,Passes_Cmp%,Passes_PrgP,Carries_Carries,Carries_PrgC,Take-Ons_Att,Take-Ons_Succ
+Dominic Solanke,19.0,eng ENG,FW,26-340,90,0,0,0,0,3,3,0,0,29,2,0,0,0.3,0.3,0.1,1,0,15,19,78.9,1,19,3,3,3
+Son Heung-min,7.0,kr KOR,"LW,LM",32-042,89,0,0,0,0,1,0,0,0,58,0,1,0,0.0,0.0,0.1,5,1,43,52,82.7,5,42,5,6,4
+Brennan Johnson,22.0,wls WAL,RW,23-088,77,0,0,0,0,2,1,0,0,43,6,0,0,0.1,0.1,0.2,1,0,21,29,72.4,1,19,3,1,0
+James Maddison,10.0,eng ENG,LM,27-270,78,0,1,0,0,1,0,0,0,78,0,1,0,0.0,0.0,0.2,8,1,55,71,77.5,15,46,3,2,2
+Rodrigo Bentancur,30.0,uy URU,CM,27-055,77,0,0,0,0,3,1,1,0,60,3,2,0,0.3,0.3,0.0,3,0,46,47,97.9,4,27,2,1,0
+Pape Matar Sarr,29.0,sn SEN,RM,21-340,77,0,0,0,0,1,0,0,0,56,1,0,1,0.0,0.0,0.1,1,0,42,48,87.5,8,30,1,0,0
+Destiny Udogie,13.0,it ITA,LB,21-265,90,0,0,0,0,0,0,0,0,82,4,0,3,0.0,0.0,0.0,0,0,61,71,85.9,7,37,2,2,0
+Micky van de Ven,37.0,nl NED,CB,23-122,90,0,0,0,0,0,0,0,0,104,0,1,1,0.0,0.0,0.0,2,0,90,96,93.8,5,68,1,0,0
+Cristian Romero,17.0,ar ARG,CB,26-114,90,0,0,0,0,1,0,0,0,102,1,0,0,0.1,0.1,0.0,1,0,89,97,91.8,9,61,0,0,0
+Pedro Porro,23.0,es ESP,RB,24-341,89,1,0,0,0,1,1,0,0,65,0,1,0,0.1,0.1,0.2,5,0,49,57,86.0,6,29,3,2,0
+Guglielmo Vicario,1.0,it ITA,GK,27-317,90,0,0,0,0,0,0,0,0,47,0,0,0,0.0,0.0,0.0,0,0,42,45,93.3,0,35,0,1,1
