@@ -4,3 +4,8 @@ lxml==6.0.2
 scikit-learn==1.7.2
 boruta==0.4.3
 numpy==2.3.4
+matplotlib
+beautifulsoup4
+requests
+lxml
+html5lib

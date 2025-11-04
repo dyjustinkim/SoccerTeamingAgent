@@ -109,3 +109,8 @@ for c in confirmed:
 
 summary = df_confirmed_and_weak.groupby('Target')[confirmed].mean().T.fillna(0)
 print(f'Summary: {summary}')
+
+# Save the confirmed and weak features to a CSV for clustering step
+output_path = "boruta_confirmed_features.csv"
+df_confirmed_and_weak.to_csv(output_path, index=False)
+print(f"Saved Boruta feature data to {output_path}")
