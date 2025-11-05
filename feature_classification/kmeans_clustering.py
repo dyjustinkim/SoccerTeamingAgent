@@ -51,7 +51,14 @@ for position in positions:
     position_results['Cluster'] = clusters
     position_results['SegmentedPosition'] = position + position_results['Cluster'].astype(str)
     
-    all_results.append(position_results)
+    cluster_means = (
+        position_results.groupby("Cluster")[X.columns]
+        .mean()
+        .reset_index()
+    )
+    cluster_means.insert(0, "Target", position)
+    cluster_means["SegmentedPosition"] = position + cluster_means["Cluster"].astype(str)
+    all_results.append(cluster_means.round(2))
     
     #Cluster characteristics
     print(f"\nCluster Summary for {position}:")
