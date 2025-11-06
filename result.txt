@@ -3,7 +3,7 @@
 Opponent: Leicestercity
 🔹 Formation: 4-3-3
 🔹 Tactical Style: Defensive
-🔹 Strategy: Counter
+🔹 Strategy: High-press
 ---------------------------------------------
 Opponent: Everton
 🔹 Formation: 4-3-3
@@ -13,12 +13,12 @@ Opponent: Everton
 Opponent: Newcastleutd
 🔹 Formation: 4-2-3-1
 🔹 Tactical Style: Defensive
-🔹 Strategy: Counter
+🔹 Strategy: Low-block
 ---------------------------------------------
 Opponent: Arsenal
 🔹 Formation: 4-3-3
 🔹 Tactical Style: Defensive
-🔹 Strategy: Low-block
+🔹 Strategy: High-press
 ---------------------------------------------
 Opponent: Brentford
 🔹 Formation: 4-3-3
@@ -33,7 +33,7 @@ Opponent: Manchesterutd
 Opponent: Brighton
 🔹 Formation: 4-3-3
 🔹 Tactical Style: Defensive
-🔹 Strategy: Counter
+🔹 Strategy: Low-block
 ---------------------------------------------
 Opponent: Westham
 🔹 Formation: 4-3-3
@@ -43,10 +43,10 @@ Opponent: Westham
 Opponent: Crystalpalace
 🔹 Formation: 4-3-3
 🔹 Tactical Style: Defensive
-🔹 Strategy: Counter
+🔹 Strategy: Low-block
 ---------------------------------------------
 Opponent: Astonvilla
 🔹 Formation: 4-3-3
 🔹 Tactical Style: Offensive
-🔹 Strategy: Pressing
+🔹 Strategy: Counter-attack
 ---------------------------------------------

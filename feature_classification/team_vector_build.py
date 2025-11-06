@@ -94,19 +94,19 @@ if not offensive_df.empty:
 
     summary_off = offensive_df.groupby("StrategyCluster")[features_off].mean()
     possession_cluster = summary_off["Poss"].idxmax() # use cluster with higher posession
-    offensive_df["Strategy"] = offensive_df["StrategyCluster"].apply(lambda c: "Possession" if c == possession_cluster else "Pressing")
+    offensive_df["Strategy"] = offensive_df["StrategyCluster"].apply(lambda c: "Possession" if c == possession_cluster else "Counter-attack")
 
-# Defensive: Counter vs Low-block
+# Defensive: Low-block vs High-press
 defensive_df = df[df["TacticalStyle"] == "Defensive"].copy()
 if not defensive_df.empty:
-    features_def = ["xG", "xGA"]
+    features_def = ["Poss", "xG", "xGA"]
     X_def = StandardScaler().fit_transform(defensive_df[features_def].fillna(0))
     kmeans_def = KMeans(n_clusters=2, random_state=42, n_init=10)
     defensive_df["StrategyCluster"] = kmeans_def.fit_predict(X_def)
 
     summary_def = defensive_df.groupby("StrategyCluster")[features_def].mean()
-    counter_cluster = summary_def["xG"].idxmax() # use cluster with higher xg
-    defensive_df["Strategy"] = defensive_df["StrategyCluster"].apply(lambda c: "Counter" if c == counter_cluster else "Low-block")
+    highpress_cluster = summary_def["Poss"].idxmax() # use cluster with higher possession
+    defensive_df["Strategy"] = defensive_df["StrategyCluster"].apply(lambda c: "High-press" if c == highpress_cluster else "Low-block")
 
 # Combine back
 df = pd.concat([offensive_df, defensive_df]).sort_index()
