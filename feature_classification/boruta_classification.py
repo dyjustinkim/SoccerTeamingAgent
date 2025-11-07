@@ -7,7 +7,7 @@ from boruta import BorutaPy
 # just run this file, replacing DATASET_PATH with whatever dataset is necessary
 # the important features are in confirmed
 
-DATASET_PATH = "sampledata/tottenham2425.csv"
+DATASET_PATH = "feature_classification/sampledata/tottenham2425.csv"
 
 # load the dataset using pandas
 df = pd.read_csv(DATASET_PATH)
@@ -102,7 +102,7 @@ print(f"Rejected features: {rejected}")
 
 # Print out distribution of the positions relative to the confirmed and weak features
 # (What is the score of the features for each position)
-df_confirmed_and_weak = df[['Target'] + list(confirmed) + list(weak)].copy()
+df_confirmed_and_weak = df[['Name'] + ['Target'] + list(confirmed) + list(weak)].copy()
 
 for c in confirmed:
     df_confirmed_and_weak[c] = pd.to_numeric(df_confirmed_and_weak[c], errors='coerce')
