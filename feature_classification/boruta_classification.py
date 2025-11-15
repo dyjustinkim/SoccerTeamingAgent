@@ -7,7 +7,7 @@ from boruta import BorutaPy
 # just run this file, replacing DATASET_PATH with whatever dataset is necessary
 # the important features are in confirmed
 
-DATASET_PATH = "feature_classification/sampledata/tottenham2425.csv"
+DATASET_PATH = "data_scraping/sampledata/tottenham2425.csv"
 
 # load the dataset using pandas
 df = pd.read_csv(DATASET_PATH)
@@ -111,6 +111,6 @@ summary = df_confirmed_and_weak.groupby('Target')[confirmed].mean().T.fillna(0)
 print(f'Summary: {summary}')
 
 # Save the confirmed and weak features to a CSV for clustering step
-output_path = "boruta_confirmed_features.csv"
+output_path = "feature_segmentation/boruta_confirmed_features.csv"
 df_confirmed_and_weak.to_csv(output_path, index=False)
 print(f"Saved Boruta feature data to {output_path}")
