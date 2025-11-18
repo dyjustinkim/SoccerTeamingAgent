@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import cross_val_score
 from boruta import BorutaPy
 
 
@@ -82,6 +83,11 @@ y = df['Target'].values
 
 # set up random forest and boruta classifier
 rf = RandomForestClassifier(n_estimators=1000, random_state=42, n_jobs=-1)
+
+# calculate cross-validation score
+scores = cross_val_score(rf, X, y, cv=5)
+
+print(f"Random Forest accuracy using Boruta features: mean: {scores.mean()}, standard deviation: {scores.std()}")
 boruta_selector = BorutaPy(rf, n_estimators='auto', random_state=42, verbose=2, max_iter=200)
 boruta_selector.fit(X, y)
 
