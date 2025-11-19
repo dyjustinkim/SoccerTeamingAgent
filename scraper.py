@@ -94,9 +94,9 @@ def scrape_team_data():
     None #TODO
 
 scrape_player_data(
-    "https://www.whoscored.com/teams/32/show/england-manchester-united", 
-    "Premier League - 2023/2024", 
-    "manunited2425")
+    "https://www.whoscored.com/teams/30/show/england-tottenham", 
+    "Premier League - 2021/2022", 
+    "tottenham2122")
 
 
 """

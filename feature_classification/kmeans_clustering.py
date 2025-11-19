@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("boruta_confirmed_features.csv")
+df = pd.read_csv("feature_classification/boruta_confirmed_features.csv")
 df = df.fillna(0)  
 
 X = df.drop(columns=["Target"])
