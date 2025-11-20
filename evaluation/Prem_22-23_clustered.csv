@@ -1,0 +1,381 @@
+team1 name,team1 goals,team1 xG,team1 formation,team1 poss,team2 name,team2 goals,team2 xG,team2 formation,team2 poss,match id,cluster,team1 tactics,team1 points,team1 strat
+Crystal Palace,0,1.2,4-2-3-1,56%,Arsenal,2,1.0,4-3-3,44%,0,1,defensive,0,High Press
+Fulham,2,1.2,4-2-3-1,33%,Liverpool,2,1.2,4-3-3,67%,1,0,offensive,1,Counter-Attack
+Newcastle United,2,1.7,4-3-3,61%,Nottingham Forest,0,0.3,3-4-1-2,39%,2,0,offensive,3,Possession
+Bournemouth,2,0.6,3-4-3,35%,Aston Villa,0,0.7,4-3-3,65%,3,0,offensive,3,Counter-Attack
+Leeds United,2,0.8,4-2-3-1,40%,Wolverhampton Wanderers,1,1.3,4-2-3-1,60%,4,1,defensive,3,Low Block
+Tottenham Hotspur,4,1.5,3-4-3,58%,Southampton,1,0.5,5-3-2,42%,5,0,offensive,3,Possession
+Everton,0,0.7,5-4-1,38%,Chelsea,1,1.5,3-4-3,62%,6,1,defensive,0,Low Block
+Leicester City,2,0.6,3-5-1-1,56%,Brentford,2,0.8,4-3-3,44%,7,1,defensive,1,High Press
+Manchester United,1,1.4,4-3-3,62%,Brighton & Hove Albion,2,1.5,3-3-3-1,38%,8,1,defensive,0,High Press
+West Ham United,0,0.5,4-2-3-1,25%,Manchester City,2,2.2,4-3-3,75%,9,1,defensive,0,Low Block
+Aston Villa,2,2.3,4-1-2-1-2,57%,Everton,1,1.6,3-4-3,43%,10,0,offensive,3,Possession
+Brighton & Hove Albion,0,1.5,3-4-1-2,54%,Newcastle United,0,0.2,4-3-3,46%,11,0,offensive,1,Possession
+Arsenal,4,2.7,4-3-3,50%,Leicester City,2,0.5,3-5-1-1,50%,12,0,offensive,3,Possession
+Southampton,2,1.2,3-4-3,43%,Leeds United,2,1.8,4-2-3-1,57%,13,1,defensive,1,Low Block
+Wolverhampton Wanderers,0,0.9,4-2-3-1,59%,Fulham,0,1.5,4-2-3-1,41%,14,1,defensive,1,High Press
+Manchester City,4,1.7,4-2-3-1,67%,Bournemouth,0,0.1,3-4-3,33%,15,0,offensive,3,Possession
+Brentford,4,1.6,5-3-2,34%,Manchester United,0,0.9,4-2-3-1,66%,16,0,offensive,3,Counter-Attack
+Nottingham Forest,1,1.3,3-4-1-2,43%,West Ham United,0,2.1,4-3-3,57%,17,1,defensive,3,Low Block
+Chelsea,2,1.6,3-5-2,63%,Tottenham Hotspur,2,1.0,3-4-3,37%,18,0,offensive,1,Possession
+Liverpool,1,2.0,4-3-3,72%,Crystal Palace,1,1.0,5-4-1,28%,19,0,offensive,1,Possession
+Tottenham Hotspur,1,1.7,3-4-3,50%,Wolverhampton Wanderers,0,0.7,3-5-2,50%,20,0,offensive,3,Possession
+Everton,1,1.5,3-4-3,49%,Nottingham Forest,1,1.0,3-4-1-2,51%,21,0,offensive,1,Counter-Attack
+Crystal Palace,3,2.6,4-3-3,51%,Aston Villa,1,0.9,4-3-3,49%,22,0,offensive,3,Possession
+Fulham,3,2.4,4-2-3-1,43%,Brentford,2,1.8,4-3-3,57%,23,0,offensive,3,Counter-Attack
+Leicester City,1,0.3,4-1-4-1,62%,Southampton,2,0.9,4-2-3-1,38%,24,1,defensive,0,High Press
+Bournemouth,0,0.3,3-1-4-2,43%,Arsenal,3,1.3,4-3-3,57%,25,1,defensive,0,Low Block
+West Ham United,0,0.8,4-2-3-1,50%,Brighton & Hove Albion,2,1.7,3-5-1-1,50%,26,1,defensive,0,High Press
+Leeds United,3,2.1,4-2-3-1,39%,Chelsea,0,0.9,3-5-2,61%,27,0,offensive,3,Counter-Attack
+Newcastle United,3,1.8,4-3-3,31%,Manchester City,3,2.1,4-3-3,69%,28,1,defensive,1,Low Block
+Manchester United,2,1.8,4-2-3-1,30%,Liverpool,1,1.3,4-3-3,70%,29,0,offensive,3,Counter-Attack
+Southampton,0,1.4,4-2-3-1,49%,Manchester United,1,1.1,4-2-3-1,51%,30,1,defensive,0,Low Block
+Brighton & Hove Albion,1,2.0,4-4-2,44%,Leeds United,0,1.8,4-2-3-1,56%,31,0,offensive,3,Counter-Attack
+Brentford,1,2.1,4-3-3,58%,Everton,1,1.1,3-4-3,42%,32,0,offensive,1,Possession
+Manchester City,4,2.2,4-2-3-1,74%,Crystal Palace,2,0.1,5-4-1,26%,33,0,offensive,3,Possession
+Chelsea,2,1.8,4-4-2,45%,Leicester City,1,2.5,4-1-4-1,55%,34,1,defensive,3,Low Block
+Liverpool,9,3.3,4-3-3,69%,Bournemouth,0,0.3,4-2-3-1,31%,35,0,offensive,3,Possession
+Arsenal,2,2.6,4-3-3,71%,Fulham,1,0.8,4-2-3-1,29%,36,0,offensive,3,Possession
+Wolverhampton Wanderers,1,0.7,4-3-3,37%,Newcastle United,1,1.7,4-3-3,63%,37,1,defensive,1,Low Block
+Aston Villa,0,0.5,4-3-1-2,58%,West Ham United,1,0.6,3-5-2,42%,38,1,defensive,0,High Press
+Nottingham Forest,0,0.9,3-4-3,55%,Tottenham Hotspur,2,2.4,3-4-3,45%,39,1,defensive,0,High Press
+Fulham,2,0.7,4-2-3-1,39%,Brighton & Hove Albion,1,1.4,3-5-2,61%,40,1,defensive,3,Low Block
+Crystal Palace,1,1.0,4-1-4-1,49%,Brentford,1,1.4,4-3-3,51%,41,1,defensive,1,Low Block
+Southampton,2,1.1,4-2-3-1,33%,Chelsea,1,1.1,4-2-2-2,67%,42,0,offensive,3,Counter-Attack
+Leeds United,1,1.0,4-2-3-1,69%,Everton,1,1.0,4-3-3,31%,43,0,offensive,1,Possession
+Bournemouth,0,0.4,4-4-2,35%,Wolverhampton Wanderers,0,1.5,4-3-3,65%,44,1,defensive,1,Low Block
+Manchester City,6,3.3,4-2-3-1,74%,Nottingham Forest,0,0.7,5-3-2,26%,45,0,offensive,3,Possession
+Arsenal,2,2.4,4-3-3,59%,Aston Villa,1,0.4,4-3-3,41%,46,0,offensive,3,Possession
+West Ham United,1,1.2,4-2-3-1,39%,Tottenham Hotspur,1,0.6,3-4-3,61%,47,0,offensive,1,Counter-Attack
+Liverpool,2,1.5,4-3-3,72%,Newcastle United,1,0.7,4-3-3,28%,48,0,offensive,3,Possession
+Leicester City,0,0.7,4-1-4-1,53%,Manchester United,1,1.5,4-2-3-1,47%,49,1,defensive,0,High Press
+Everton,0,1.7,4-3-3,39%,Liverpool,0,2.1,4-3-3,61%,50,1,defensive,1,Low Block
+Tottenham Hotspur,2,2.9,3-4-3,52%,Fulham,1,0.7,4-2-3-1,48%,51,0,offensive,3,Possession
+Nottingham Forest,2,1.9,3-4-3,52%,Bournemouth,3,0.8,4-2-3-1,48%,52,0,offensive,0,Possession
+Wolverhampton Wanderers,1,0.8,4-3-3,51%,Southampton,0,1.2,4-2-3-1,49%,53,0,offensive,3,Possession
+Newcastle United,0,2.8,4-3-3,52%,Crystal Palace,0,1.0,4-3-3,48%,54,0,offensive,1,Possession
+Chelsea,2,0.9,3-1-4-2,67%,West Ham United,1,1.1,3-4-1-2,33%,55,0,offensive,3,Possession
+Brentford,5,2.3,4-3-3,32%,Leeds United,2,1.7,4-2-3-1,68%,56,0,offensive,3,Counter-Attack
+Aston Villa,1,0.3,4-3-2-1,29%,Manchester City,1,2.1,4-3-3,71%,57,1,defensive,1,Low Block
+Brighton & Hove Albion,5,2.6,3-5-2,53%,Leicester City,2,1.4,4-4-2,47%,58,0,offensive,3,Possession
+Manchester United,3,1.5,4-2-3-1,40%,Arsenal,1,1.3,4-3-3,60%,59,0,offensive,3,Counter-Attack
+Nottingham Forest,2,1.4,3-4-1-2,41%,Fulham,3,0.9,4-2-3-1,59%,60,0,offensive,0,Counter-Attack
+Aston Villa,1,1.5,4-3-2-1,53%,Southampton,0,0.3,4-2-3-1,47%,61,0,offensive,3,Possession
+Wolverhampton Wanderers,0,0.4,4-3-3,41%,Manchester City,3,1.1,4-3-3,59%,62,1,defensive,0,Low Block
+Newcastle United,1,1.9,4-3-3,72%,Bournemouth,1,0.7,4-2-3-1,28%,63,0,offensive,1,Possession
+Tottenham Hotspur,6,2.2,3-4-3,44%,Leicester City,2,1.8,4-1-4-1,56%,64,0,offensive,3,Counter-Attack
+Brentford,0,0.5,3-5-2,37%,Arsenal,3,1.5,4-3-3,63%,65,1,defensive,0,Low Block
+Everton,1,0.4,4-3-3,53%,West Ham United,0,1.0,4-2-3-1,47%,66,1,defensive,3,High Press
+Arsenal,3,2.4,4-3-3,64%,Tottenham Hotspur,1,1.6,3-4-3,36%,67,0,offensive,3,Possession
+Fulham,1,0.5,4-2-3-1,33%,Newcastle United,4,3.3,4-3-3,67%,68,1,defensive,0,Low Block
+Liverpool,3,1.5,4-3-3,54%,Brighton & Hove Albion,3,1.4,3-4-3,46%,69,0,offensive,1,Possession
+Crystal Palace,1,0.4,4-3-3,36%,Chelsea,2,1.1,4-2-2-2,64%,70,1,defensive,0,Low Block
+Bournemouth,0,0.4,4-4-2,42%,Brentford,0,0.9,4-3-3,58%,71,1,defensive,1,Low Block
+Southampton,1,1.7,4-4-2,55%,Everton,2,2.0,4-3-3,45%,72,1,defensive,0,High Press
+West Ham United,2,0.9,4-2-3-1,39%,Wolverhampton Wanderers,0,0.7,3-4-3,61%,73,0,offensive,3,Counter-Attack
+Manchester City,6,3.2,4-3-3,53%,Manchester United,3,1.7,4-2-3-1,47%,74,0,offensive,3,Possession
+Leeds United,0,0.4,4-2-3-1,44%,Aston Villa,0,2.2,4-3-3,56%,75,1,defensive,1,Low Block
+Leicester City,4,1.3,4-1-4-1,51%,Nottingham Forest,0,1.1,4-2-3-1,49%,76,0,offensive,3,Possession
+Newcastle United,5,1.5,4-3-3,54%,Brentford,1,1.2,3-5-2,46%,77,0,offensive,3,Possession
+Bournemouth,2,1.1,4-4-2,45%,Leicester City,1,1.0,4-1-4-1,55%,78,0,offensive,3,Counter-Attack
+Chelsea,3,1.9,4-2-3-1,57%,Wolverhampton Wanderers,0,1.1,4-2-3-1,43%,79,0,offensive,3,Possession
+Manchester City,4,2.4,4-2-3-1,65%,Southampton,0,0.2,4-4-2,35%,80,0,offensive,3,Possession
+Brighton & Hove Albion,0,0.7,3-4-3,59%,Tottenham Hotspur,1,0.8,3-5-2,41%,81,1,defensive,0,High Press
+West Ham United,3,2.4,4-2-3-1,50%,Fulham,1,0.7,4-2-3-1,50%,82,0,offensive,3,Possession
+Crystal Palace,2,1.1,4-3-3,54%,Leeds United,1,1.0,4-2-3-1,46%,83,0,offensive,3,Possession
+Arsenal,3,2.7,4-3-3,43%,Liverpool,2,1.1,4-2-3-1,57%,84,0,offensive,3,Counter-Attack
+Everton,1,0.6,4-3-3,40%,Manchester United,2,1.4,4-2-3-1,60%,85,1,defensive,0,Low Block
+Nottingham Forest,1,0.3,4-3-3,40%,Aston Villa,1,0.7,4-3-3,60%,86,1,defensive,1,Low Block
+Brentford,2,1.5,4-3-3,28%,Brighton & Hove Albion,0,1.9,4-4-2,72%,87,0,offensive,3,Counter-Attack
+Leicester City,0,1.0,4-1-4-1,54%,Crystal Palace,0,0.4,4-3-3,46%,88,0,offensive,1,Possession
+Fulham,2,2.1,4-2-3-1,69%,Bournemouth,2,1.0,4-2-3-1,31%,89,0,offensive,1,Possession
+Wolverhampton Wanderers,1,1.3,4-2-3-1,58%,Nottingham Forest,0,1.5,4-3-3,42%,90,0,offensive,3,Possession
+Tottenham Hotspur,2,2.2,3-4-3,62%,Everton,0,0.4,5-3-2,38%,91,0,offensive,3,Possession
+Manchester United,0,0.8,4-2-3-1,63%,Newcastle United,0,0.8,4-3-3,37%,92,0,offensive,1,Possession
+Aston Villa,0,1.8,4-3-3,42%,Chelsea,2,0.9,3-4-3,58%,93,0,offensive,0,Counter-Attack
+Leeds United,0,1.8,4-2-3-1,47%,Arsenal,1,0.5,4-3-3,53%,94,0,offensive,0,Counter-Attack
+Southampton,1,0.5,4-3-3,39%,West Ham United,1,1.7,3-4-3,61%,95,1,defensive,1,Low Block
+Liverpool,1,2.1,4-2-3-1,37%,Manchester City,0,1.0,3-4-3,63%,96,0,offensive,3,Counter-Attack
+Brighton & Hove Albion,0,1.7,3-4-3,70%,Nottingham Forest,0,0.1,4-3-3,30%,97,0,offensive,1,Possession
+Crystal Palace,2,1.2,4-3-3,51%,Wolverhampton Wanderers,1,0.8,4-2-3-1,49%,98,0,offensive,3,Possession
+Bournemouth,0,1.0,3-4-3,54%,Southampton,1,1.0,4-4-2,46%,99,1,defensive,0,High Press
+Newcastle United,1,1.5,4-3-3,49%,Everton,0,0.2,4-3-3,51%,100,0,offensive,3,Counter-Attack
+Brentford,0,1.3,3-5-2,34%,Chelsea,0,0.9,3-5-1-1,66%,101,0,offensive,1,Counter-Attack
+Liverpool,1,1.7,4-4-2,54%,West Ham United,0,1.7,4-4-2,46%,102,0,offensive,3,Possession
+Manchester United,2,1.5,4-2-3-1,52%,Tottenham Hotspur,0,0.6,3-5-2,48%,103,0,offensive,3,Possession
+Fulham,3,2.1,4-2-3-1,60%,Aston Villa,0,1.2,4-3-2-1,40%,104,0,offensive,3,Possession
+Leicester City,2,0.8,4-1-4-1,46%,Leeds United,0,1.3,4-2-3-1,54%,105,0,offensive,3,Counter-Attack
+Nottingham Forest,1,1.9,4-3-3,25%,Liverpool,0,1.6,4-4-2,75%,106,0,offensive,3,Counter-Attack
+Everton,3,1.4,4-2-3-1,46%,Crystal Palace,0,0.9,4-1-4-1,54%,107,0,offensive,3,Counter-Attack
+Manchester City,3,1.6,4-3-3,48%,Brighton & Hove Albion,1,0.5,3-4-1-2,52%,108,0,offensive,3,Counter-Attack
+Chelsea,1,1.1,3-4-3,48%,Manchester United,1,0.8,4-1-4-1,52%,109,0,offensive,1,Counter-Attack
+Wolverhampton Wanderers,0,2.1,4-2-3-1,60%,Leicester City,4,0.9,4-1-4-1,40%,110,1,defensive,0,High Press
+Aston Villa,4,2.8,4-2-3-1,45%,Brentford,0,0.9,3-5-2,55%,111,0,offensive,3,Counter-Attack
+Leeds United,2,1.6,4-2-3-1,57%,Fulham,3,1.8,4-2-3-1,43%,112,1,defensive,0,High Press
+Southampton,1,0.7,4-4-2,41%,Arsenal,1,1.0,4-3-3,59%,113,1,defensive,1,Low Block
+Tottenham Hotspur,1,1.6,3-5-2,53%,Newcastle United,2,1.2,4-3-3,47%,114,0,offensive,0,Possession
+West Ham United,2,1.9,4-2-3-1,55%,Bournemouth,0,0.4,4-2-3-1,45%,115,0,offensive,3,Possession
+Leicester City,0,0.7,3-4-3,36%,Manchester City,1,1.0,4-3-3,64%,116,1,defensive,0,Low Block
+Crystal Palace,1,0.9,4-3-3,44%,Southampton,0,1.3,3-5-2,56%,117,0,offensive,3,Counter-Attack
+Newcastle United,4,3.4,4-3-3,59%,Aston Villa,0,0.4,4-2-3-1,41%,118,0,offensive,3,Possession
+Bournemouth,2,0.5,3-5-1-1,31%,Tottenham Hotspur,3,2.0,3-5-2,69%,119,1,defensive,0,Low Block
+Brighton & Hove Albion,4,2.4,4-2-3-1,41%,Chelsea,1,1.4,3-4-3,59%,120,0,offensive,3,Counter-Attack
+Brentford,1,1.4,4-3-3,58%,Wolverhampton Wanderers,1,0.6,4-2-3-1,42%,121,0,offensive,1,Possession
+Fulham,0,1.9,4-2-3-1,56%,Everton,0,0.9,4-2-3-1,44%,122,0,offensive,1,Possession
+Liverpool,1,1.7,4-1-2-1-2,68%,Leeds United,2,1.8,4-2-3-1,32%,123,1,defensive,0,High Press
+Arsenal,5,2.3,4-3-3,69%,Nottingham Forest,0,0.4,4-3-3,31%,124,0,offensive,3,Possession
+Manchester United,1,1.2,4-2-3-1,53%,West Ham United,0,1.1,4-2-3-1,47%,125,0,offensive,3,Possession
+Leeds United,4,2.2,4-2-3-1,60%,Bournemouth,3,1.5,4-4-2,40%,126,0,offensive,3,Possession
+Wolverhampton Wanderers,2,1.2,4-3-3,29%,Brighton & Hove Albion,3,1.5,4-2-3-1,71%,127,1,defensive,0,Low Block
+Manchester City,2,2.1,4-3-3,70%,Fulham,1,1.0,4-2-3-1,30%,128,0,offensive,3,Possession
+Nottingham Forest,2,1.5,4-3-1-2,48%,Brentford,2,1.5,4-3-3,52%,129,0,offensive,1,Counter-Attack
+Everton,0,1.2,4-3-3,49%,Leicester City,2,2.3,4-1-4-1,51%,130,1,defensive,0,Low Block
+Chelsea,0,0.3,4-2-3-1,45%,Arsenal,1,2.1,4-3-3,55%,131,1,defensive,0,Low Block
+Southampton,1,1.7,4-2-3-1,55%,Newcastle United,4,0.9,4-3-3,45%,132,1,defensive,0,High Press
+West Ham United,1,0.3,4-2-3-1,42%,Crystal Palace,2,1.0,4-3-3,58%,133,1,defensive,0,Low Block
+Aston Villa,3,0.6,4-2-2-2,42%,Manchester United,1,0.5,4-2-3-1,58%,134,0,offensive,3,Counter-Attack
+Tottenham Hotspur,1,1.2,5-3-2,47%,Liverpool,2,1.2,4-1-2-1-2,53%,135,1,defensive,0,Low Block
+Manchester City,1,1.6,4-3-3,74%,Brentford,2,1.3,3-5-2,26%,136,1,defensive,0,High Press
+Tottenham Hotspur,4,1.8,3-4-3,55%,Leeds United,3,1.1,4-2-3-1,45%,137,0,offensive,3,Possession
+Nottingham Forest,1,1.1,4-3-3,32%,Crystal Palace,0,1.2,4-3-3,68%,138,0,offensive,3,Counter-Attack
+West Ham United,0,1.4,4-2-3-1,54%,Leicester City,2,1.8,4-1-4-1,46%,139,1,defensive,0,High Press
+Liverpool,3,1.9,4-3-3,60%,Southampton,1,1.1,5-3-2,40%,140,0,offensive,3,Possession
+Bournemouth,3,2.4,4-4-2,36%,Everton,0,0.8,4-3-3,64%,141,0,offensive,3,Counter-Attack
+Newcastle United,1,1.0,4-3-3,49%,Chelsea,0,0.3,3-4-3,51%,142,0,offensive,3,Counter-Attack
+Wolverhampton Wanderers,0,0.7,5-3-2,38%,Arsenal,2,2.1,4-3-3,62%,143,1,defensive,0,Low Block
+Brighton & Hove Albion,1,0.6,4-2-3-1,65%,Aston Villa,2,1.5,4-4-2,35%,144,1,defensive,0,High Press
+Fulham,1,1.4,4-2-3-1,53%,Manchester United,2,2.5,4-2-3-1,47%,145,1,defensive,0,High Press
+Brentford,2,2.0,3-5-2,39%,Tottenham Hotspur,2,1.1,3-4-3,61%,146,0,offensive,1,Counter-Attack
+Crystal Palace,0,0.4,4-3-3,36%,Fulham,3,2.5,4-2-3-1,64%,147,1,defensive,0,Low Block
+Everton,1,1.7,4-3-3,58%,Wolverhampton Wanderers,2,0.8,4-3-3,42%,148,0,offensive,0,Possession
+Leicester City,0,0.5,4-2-3-1,60%,Newcastle United,3,1.9,4-3-3,40%,149,1,defensive,0,High Press
+Southampton,1,1.9,4-2-3-1,34%,Brighton & Hove Albion,3,0.6,4-2-3-1,66%,150,0,offensive,0,Counter-Attack
+Aston Villa,1,1.4,4-4-2,48%,Liverpool,3,2.7,4-3-3,52%,151,1,defensive,0,Low Block
+Arsenal,3,2.1,4-3-3,66%,West Ham United,1,1.0,4-2-3-1,34%,152,0,offensive,3,Possession
+Chelsea,2,1.8,4-3-3,60%,Bournemouth,0,0.5,5-3-2,40%,153,0,offensive,3,Possession
+Manchester United,3,2.4,4-2-3-1,65%,Nottingham Forest,0,0.7,4-3-3,35%,154,0,offensive,3,Possession
+Leeds United,1,0.6,4-3-3,31%,Manchester City,3,4.3,4-3-3,69%,155,1,defensive,0,Low Block
+West Ham United,0,1.3,3-4-3,63%,Brentford,2,1.6,3-5-2,37%,156,1,defensive,0,High Press
+Liverpool,2,2.2,4-3-3,57%,Leicester City,1,1.0,4-2-3-1,43%,157,0,offensive,3,Possession
+Wolverhampton Wanderers,0,0.7,4-2-3-1,46%,Manchester United,1,2.0,4-2-3-1,54%,158,1,defensive,0,Low Block
+Newcastle United,0,2.2,4-3-3,60%,Leeds United,0,0.4,4-2-3-1,40%,159,0,offensive,1,Possession
+Fulham,2,1.5,4-2-3-1,62%,Southampton,1,0.8,3-4-3,38%,160,0,offensive,3,Possession
+Bournemouth,0,0.6,4-4-2,59%,Crystal Palace,2,1.6,4-2-3-1,41%,161,1,defensive,0,High Press
+Manchester City,1,1.7,4-3-3,74%,Everton,1,0.1,5-3-2,26%,162,0,offensive,1,Possession
+Brighton & Hove Albion,2,1.2,4-2-3-1,68%,Arsenal,4,2.9,4-3-3,32%,163,1,defensive,0,High Press
+Tottenham Hotspur,0,0.7,3-4-3,59%,Aston Villa,2,1.0,4-4-2,41%,164,1,defensive,0,High Press
+Nottingham Forest,1,1.4,4-3-3,29%,Chelsea,1,0.9,4-3-3,71%,165,0,offensive,1,Counter-Attack
+Brentford,3,1.6,3-5-2,28%,Liverpool,1,0.9,4-3-3,72%,166,0,offensive,3,Counter-Attack
+Leicester City,0,1.7,4-2-3-1,61%,Fulham,1,1.7,4-2-3-1,39%,167,1,defensive,0,High Press
+Everton,1,1.3,4-3-3,49%,Brighton & Hove Albion,4,2.2,4-2-3-1,51%,168,1,defensive,0,Low Block
+Arsenal,0,1.1,4-3-3,66%,Newcastle United,0,1.0,4-3-3,34%,169,0,offensive,1,Possession
+Manchester United,3,2.2,4-2-3-1,58%,Bournemouth,0,0.6,4-4-2,42%,170,0,offensive,3,Possession
+Southampton,0,0.5,3-1-4-2,63%,Nottingham Forest,1,1.4,4-3-1-2,37%,171,1,defensive,0,High Press
+Leeds United,2,1.6,4-2-3-1,62%,West Ham United,2,1.4,4-3-3,38%,172,0,offensive,1,Possession
+Crystal Palace,0,0.8,4-2-3-1,47%,Tottenham Hotspur,4,1.4,3-4-3,53%,173,1,defensive,0,Low Block
+Aston Villa,1,1.8,4-4-2,56%,Wolverhampton Wanderers,1,0.9,4-2-3-1,44%,174,0,offensive,1,Possession
+Chelsea,0,0.4,4-2-3-1,48%,Manchester City,1,2.0,3-2-4-1,52%,175,1,defensive,0,Low Block
+Fulham,2,1.0,4-2-3-1,48%,Chelsea,1,2.1,3-5-2,52%,176,1,defensive,3,Low Block
+Aston Villa,2,1.2,4-4-2,52%,Leeds United,1,2.4,4-2-3-1,48%,177,1,defensive,3,High Press
+Manchester United,2,1.7,4-2-3-1,30%,Manchester City,1,0.6,4-3-3,70%,178,0,offensive,3,Counter-Attack
+Nottingham Forest,2,2.4,4-3-1-2,39%,Leicester City,0,1.0,4-2-3-1,61%,179,0,offensive,3,Counter-Attack
+Wolverhampton Wanderers,1,0.9,4-2-3-1,58%,West Ham United,0,1.1,4-3-3,42%,180,0,offensive,3,Possession
+Brighton & Hove Albion,3,1.9,4-2-3-1,61%,Liverpool,0,1.0,4-1-2-1-2,39%,181,0,offensive,3,Possession
+Everton,1,1.4,3-4-3,52%,Southampton,2,1.2,4-2-3-1,48%,182,1,defensive,0,High Press
+Brentford,2,1.4,4-3-3,50%,Bournemouth,0,0.6,4-4-1-1,50%,183,0,offensive,3,Possession
+Newcastle United,1,2.2,4-3-3,62%,Fulham,0,1.1,4-2-3-1,38%,184,0,offensive,3,Possession
+Chelsea,1,1.5,4-2-3-1,61%,Crystal Palace,0,0.7,4-2-3-1,39%,185,0,offensive,3,Possession
+Tottenham Hotspur,0,1.6,3-4-3,51%,Arsenal,2,1.8,4-3-3,49%,186,1,defensive,0,High Press
+Crystal Palace,1,0.5,4-2-3-1,40%,Manchester United,1,2.1,4-2-3-1,60%,187,1,defensive,1,Low Block
+Manchester City,4,2.3,4-2-3-1,58%,Tottenham Hotspur,2,0.8,3-4-3,42%,188,0,offensive,3,Possession
+Liverpool,0,1.4,4-3-3,48%,Chelsea,0,1.6,3-4-3,52%,189,1,defensive,1,Low Block
+Arsenal,2,1.0,4-3-3,44%,Crystal Palace,0,1.2,4-2-3-1,56%,0,0,offensive,3,Counter-Attack
+Liverpool,2,1.2,4-3-3,67%,Fulham,2,1.2,4-2-3-1,33%,1,0,offensive,1,Possession
+Nottingham Forest,0,0.3,3-4-1-2,39%,Newcastle United,2,1.7,4-3-3,61%,2,1,defensive,0,Low Block
+Aston Villa,0,0.7,4-3-3,65%,Bournemouth,2,0.6,3-4-3,35%,3,1,defensive,0,High Press
+Wolverhampton Wanderers,1,1.3,4-2-3-1,60%,Leeds United,2,0.8,4-2-3-1,40%,4,0,offensive,0,Possession
+Southampton,1,0.5,5-3-2,42%,Tottenham Hotspur,4,1.5,3-4-3,58%,5,1,defensive,0,Low Block
+Chelsea,1,1.5,3-4-3,62%,Everton,0,0.7,5-4-1,38%,6,0,offensive,3,Possession
+Brentford,2,0.8,4-3-3,44%,Leicester City,2,0.6,3-5-1-1,56%,7,0,offensive,1,Counter-Attack
+Brighton & Hove Albion,2,1.5,3-3-3-1,38%,Manchester United,1,1.4,4-3-3,62%,8,0,offensive,3,Counter-Attack
+Manchester City,2,2.2,4-3-3,75%,West Ham United,0,0.5,4-2-3-1,25%,9,0,offensive,3,Possession
+Everton,1,1.6,3-4-3,43%,Aston Villa,2,2.3,4-1-2-1-2,57%,10,1,defensive,0,Low Block
+Newcastle United,0,0.2,4-3-3,46%,Brighton & Hove Albion,0,1.5,3-4-1-2,54%,11,1,defensive,1,Low Block
+Leicester City,2,0.5,3-5-1-1,50%,Arsenal,4,2.7,4-3-3,50%,12,1,defensive,0,High Press
+Leeds United,2,1.8,4-2-3-1,57%,Southampton,2,1.2,3-4-3,43%,13,0,offensive,1,Possession
+Fulham,0,1.5,4-2-3-1,41%,Wolverhampton Wanderers,0,0.9,4-2-3-1,59%,14,0,offensive,1,Counter-Attack
+Bournemouth,0,0.1,3-4-3,33%,Manchester City,4,1.7,4-2-3-1,67%,15,1,defensive,0,Low Block
+Manchester United,0,0.9,4-2-3-1,66%,Brentford,4,1.6,5-3-2,34%,16,1,defensive,0,High Press
+West Ham United,0,2.1,4-3-3,57%,Nottingham Forest,1,1.3,3-4-1-2,43%,17,0,offensive,0,Possession
+Tottenham Hotspur,2,1.0,3-4-3,37%,Chelsea,2,1.6,3-5-2,63%,18,1,defensive,1,Low Block
+Crystal Palace,1,1.0,5-4-1,28%,Liverpool,1,2.0,4-3-3,72%,19,1,defensive,1,Low Block
+Wolverhampton Wanderers,0,0.7,3-5-2,50%,Tottenham Hotspur,1,1.7,3-4-3,50%,20,1,defensive,0,High Press
+Nottingham Forest,1,1.0,3-4-1-2,51%,Everton,1,1.5,3-4-3,49%,21,1,defensive,1,High Press
+Aston Villa,1,0.9,4-3-3,49%,Crystal Palace,3,2.6,4-3-3,51%,22,1,defensive,0,Low Block
+Brentford,2,1.8,4-3-3,57%,Fulham,3,2.4,4-2-3-1,43%,23,1,defensive,0,High Press
+Southampton,2,0.9,4-2-3-1,38%,Leicester City,1,0.3,4-1-4-1,62%,24,0,offensive,3,Counter-Attack
+Arsenal,3,1.3,4-3-3,57%,Bournemouth,0,0.3,3-1-4-2,43%,25,0,offensive,3,Possession
+Brighton & Hove Albion,2,1.7,3-5-1-1,50%,West Ham United,0,0.8,4-2-3-1,50%,26,0,offensive,3,Possession
+Chelsea,0,0.9,3-5-2,61%,Leeds United,3,2.1,4-2-3-1,39%,27,1,defensive,0,High Press
+Manchester City,3,2.1,4-3-3,69%,Newcastle United,3,1.8,4-3-3,31%,28,0,offensive,1,Possession
+Liverpool,1,1.3,4-3-3,70%,Manchester United,2,1.8,4-2-3-1,30%,29,1,defensive,0,High Press
+Manchester United,1,1.1,4-2-3-1,51%,Southampton,0,1.4,4-2-3-1,49%,30,0,offensive,3,Possession
+Leeds United,0,1.8,4-2-3-1,56%,Brighton & Hove Albion,1,2.0,4-4-2,44%,31,1,defensive,0,High Press
+Everton,1,1.1,3-4-3,42%,Brentford,1,2.1,4-3-3,58%,32,1,defensive,1,Low Block
+Crystal Palace,2,0.1,5-4-1,26%,Manchester City,4,2.2,4-2-3-1,74%,33,1,defensive,0,Low Block
+Leicester City,1,2.5,4-1-4-1,55%,Chelsea,2,1.8,4-4-2,45%,34,0,offensive,0,Possession
+Bournemouth,0,0.3,4-2-3-1,31%,Liverpool,9,3.3,4-3-3,69%,35,1,defensive,0,Low Block
+Fulham,1,0.8,4-2-3-1,29%,Arsenal,2,2.6,4-3-3,71%,36,1,defensive,0,Low Block
+Newcastle United,1,1.7,4-3-3,63%,Wolverhampton Wanderers,1,0.7,4-3-3,37%,37,0,offensive,1,Possession
+West Ham United,1,0.6,3-5-2,42%,Aston Villa,0,0.5,4-3-1-2,58%,38,0,offensive,3,Counter-Attack
+Tottenham Hotspur,2,2.4,3-4-3,45%,Nottingham Forest,0,0.9,3-4-3,55%,39,0,offensive,3,Counter-Attack
+Brighton & Hove Albion,1,1.4,3-5-2,61%,Fulham,2,0.7,4-2-3-1,39%,40,0,offensive,0,Possession
+Brentford,1,1.4,4-3-3,51%,Crystal Palace,1,1.0,4-1-4-1,49%,41,0,offensive,1,Possession
+Chelsea,1,1.1,4-2-2-2,67%,Southampton,2,1.1,4-2-3-1,33%,42,1,defensive,0,High Press
+Everton,1,1.0,4-3-3,31%,Leeds United,1,1.0,4-2-3-1,69%,43,0,offensive,1,Counter-Attack
+Wolverhampton Wanderers,0,1.5,4-3-3,65%,Bournemouth,0,0.4,4-4-2,35%,44,0,offensive,1,Possession
+Nottingham Forest,0,0.7,5-3-2,26%,Manchester City,6,3.3,4-2-3-1,74%,45,1,defensive,0,Low Block
+Aston Villa,1,0.4,4-3-3,41%,Arsenal,2,2.4,4-3-3,59%,46,1,defensive,0,Low Block
+Tottenham Hotspur,1,0.6,3-4-3,61%,West Ham United,1,1.2,4-2-3-1,39%,47,1,defensive,1,High Press
+Newcastle United,1,0.7,4-3-3,28%,Liverpool,2,1.5,4-3-3,72%,48,1,defensive,0,Low Block
+Manchester United,1,1.5,4-2-3-1,47%,Leicester City,0,0.7,4-1-4-1,53%,49,0,offensive,3,Counter-Attack
+Liverpool,0,2.1,4-3-3,61%,Everton,0,1.7,4-3-3,39%,50,0,offensive,1,Possession
+Fulham,1,0.7,4-2-3-1,48%,Tottenham Hotspur,2,2.9,3-4-3,52%,51,1,defensive,0,Low Block
+Bournemouth,3,0.8,4-2-3-1,48%,Nottingham Forest,2,1.9,3-4-3,52%,52,1,defensive,3,Low Block
+Southampton,0,1.2,4-2-3-1,49%,Wolverhampton Wanderers,1,0.8,4-3-3,51%,53,0,offensive,0,Counter-Attack
+Crystal Palace,0,1.0,4-3-3,48%,Newcastle United,0,2.8,4-3-3,52%,54,1,defensive,1,Low Block
+West Ham United,1,1.1,3-4-1-2,33%,Chelsea,2,0.9,3-1-4-2,67%,55,1,defensive,0,Low Block
+Leeds United,2,1.7,4-2-3-1,68%,Brentford,5,2.3,4-3-3,32%,56,1,defensive,0,High Press
+Manchester City,1,2.1,4-3-3,71%,Aston Villa,1,0.3,4-3-2-1,29%,57,0,offensive,1,Possession
+Leicester City,2,1.4,4-4-2,47%,Brighton & Hove Albion,5,2.6,3-5-2,53%,58,1,defensive,0,Low Block
+Arsenal,1,1.3,4-3-3,60%,Manchester United,3,1.5,4-2-3-1,40%,59,1,defensive,0,High Press
+Fulham,3,0.9,4-2-3-1,59%,Nottingham Forest,2,1.4,3-4-1-2,41%,60,1,defensive,3,High Press
+Southampton,0,0.3,4-2-3-1,47%,Aston Villa,1,1.5,4-3-2-1,53%,61,1,defensive,0,Low Block
+Manchester City,3,1.1,4-3-3,59%,Wolverhampton Wanderers,0,0.4,4-3-3,41%,62,0,offensive,3,Possession
+Bournemouth,1,0.7,4-2-3-1,28%,Newcastle United,1,1.9,4-3-3,72%,63,1,defensive,1,Low Block
+Leicester City,2,1.8,4-1-4-1,56%,Tottenham Hotspur,6,2.2,3-4-3,44%,64,1,defensive,0,High Press
+Arsenal,3,1.5,4-3-3,63%,Brentford,0,0.5,3-5-2,37%,65,0,offensive,3,Possession
+West Ham United,0,1.0,4-2-3-1,47%,Everton,1,0.4,4-3-3,53%,66,0,offensive,0,Counter-Attack
+Tottenham Hotspur,1,1.6,3-4-3,36%,Arsenal,3,2.4,4-3-3,64%,67,1,defensive,0,Low Block
+Newcastle United,4,3.3,4-3-3,67%,Fulham,1,0.5,4-2-3-1,33%,68,0,offensive,3,Possession
+Brighton & Hove Albion,3,1.4,3-4-3,46%,Liverpool,3,1.5,4-3-3,54%,69,1,defensive,1,Low Block
+Chelsea,2,1.1,4-2-2-2,64%,Crystal Palace,1,0.4,4-3-3,36%,70,0,offensive,3,Possession
+Brentford,0,0.9,4-3-3,58%,Bournemouth,0,0.4,4-4-2,42%,71,0,offensive,1,Possession
+Everton,2,2.0,4-3-3,45%,Southampton,1,1.7,4-4-2,55%,72,0,offensive,3,Counter-Attack
+Wolverhampton Wanderers,0,0.7,3-4-3,61%,West Ham United,2,0.9,4-2-3-1,39%,73,1,defensive,0,High Press
+Manchester United,3,1.7,4-2-3-1,47%,Manchester City,6,3.2,4-3-3,53%,74,1,defensive,0,Low Block
+Aston Villa,0,2.2,4-3-3,56%,Leeds United,0,0.4,4-2-3-1,44%,75,0,offensive,1,Possession
+Nottingham Forest,0,1.1,4-2-3-1,49%,Leicester City,4,1.3,4-1-4-1,51%,76,1,defensive,0,Low Block
+Brentford,1,1.2,3-5-2,46%,Newcastle United,5,1.5,4-3-3,54%,77,1,defensive,0,Low Block
+Leicester City,1,1.0,4-1-4-1,55%,Bournemouth,2,1.1,4-4-2,45%,78,1,defensive,0,High Press
+Wolverhampton Wanderers,0,1.1,4-2-3-1,43%,Chelsea,3,1.9,4-2-3-1,57%,79,1,defensive,0,Low Block
+Southampton,0,0.2,4-4-2,35%,Manchester City,4,2.4,4-2-3-1,65%,80,1,defensive,0,Low Block
+Tottenham Hotspur,1,0.8,3-5-2,41%,Brighton & Hove Albion,0,0.7,3-4-3,59%,81,0,offensive,3,Counter-Attack
+Fulham,1,0.7,4-2-3-1,50%,West Ham United,3,2.4,4-2-3-1,50%,82,1,defensive,0,High Press
+Leeds United,1,1.0,4-2-3-1,46%,Crystal Palace,2,1.1,4-3-3,54%,83,1,defensive,0,Low Block
+Liverpool,2,1.1,4-2-3-1,57%,Arsenal,3,2.7,4-3-3,43%,84,1,defensive,0,High Press
+Manchester United,2,1.4,4-2-3-1,60%,Everton,1,0.6,4-3-3,40%,85,0,offensive,3,Possession
+Aston Villa,1,0.7,4-3-3,60%,Nottingham Forest,1,0.3,4-3-3,40%,86,0,offensive,1,Possession
+Brighton & Hove Albion,0,1.9,4-4-2,72%,Brentford,2,1.5,4-3-3,28%,87,1,defensive,0,High Press
+Crystal Palace,0,0.4,4-3-3,46%,Leicester City,0,1.0,4-1-4-1,54%,88,1,defensive,1,Low Block
+Bournemouth,2,1.0,4-2-3-1,31%,Fulham,2,2.1,4-2-3-1,69%,89,1,defensive,1,Low Block
+Nottingham Forest,0,1.5,4-3-3,42%,Wolverhampton Wanderers,1,1.3,4-2-3-1,58%,90,1,defensive,0,Low Block
+Everton,0,0.4,5-3-2,38%,Tottenham Hotspur,2,2.2,3-4-3,62%,91,1,defensive,0,Low Block
+Newcastle United,0,0.8,4-3-3,37%,Manchester United,0,0.8,4-2-3-1,63%,92,0,offensive,1,Counter-Attack
+Chelsea,2,0.9,3-4-3,58%,Aston Villa,0,1.8,4-3-3,42%,93,1,defensive,3,High Press
+Arsenal,1,0.5,4-3-3,53%,Leeds United,0,1.8,4-2-3-1,47%,94,1,defensive,3,High Press
+West Ham United,1,1.7,3-4-3,61%,Southampton,1,0.5,4-3-3,39%,95,0,offensive,1,Possession
+Manchester City,0,1.0,3-4-3,63%,Liverpool,1,2.1,4-2-3-1,37%,96,1,defensive,0,High Press
+Nottingham Forest,0,0.1,4-3-3,30%,Brighton & Hove Albion,0,1.7,3-4-3,70%,97,1,defensive,1,Low Block
+Wolverhampton Wanderers,1,0.8,4-2-3-1,49%,Crystal Palace,2,1.2,4-3-3,51%,98,1,defensive,0,Low Block
+Southampton,1,1.0,4-4-2,46%,Bournemouth,0,1.0,3-4-3,54%,99,0,offensive,3,Counter-Attack
+Everton,0,0.2,4-3-3,51%,Newcastle United,1,1.5,4-3-3,49%,100,1,defensive,0,High Press
+Chelsea,0,0.9,3-5-1-1,66%,Brentford,0,1.3,3-5-2,34%,101,1,defensive,1,High Press
+West Ham United,0,1.7,4-4-2,46%,Liverpool,1,1.7,4-4-2,54%,102,1,defensive,0,Low Block
+Tottenham Hotspur,0,0.6,3-5-2,48%,Manchester United,2,1.5,4-2-3-1,52%,103,1,defensive,0,Low Block
+Aston Villa,0,1.2,4-3-2-1,40%,Fulham,3,2.1,4-2-3-1,60%,104,1,defensive,0,Low Block
+Leeds United,0,1.3,4-2-3-1,54%,Leicester City,2,0.8,4-1-4-1,46%,105,1,defensive,0,High Press
+Liverpool,0,1.6,4-4-2,75%,Nottingham Forest,1,1.9,4-3-3,25%,106,1,defensive,0,High Press
+Crystal Palace,0,0.9,4-1-4-1,54%,Everton,3,1.4,4-2-3-1,46%,107,1,defensive,0,High Press
+Brighton & Hove Albion,1,0.5,3-4-1-2,52%,Manchester City,3,1.6,4-3-3,48%,108,1,defensive,0,High Press
+Manchester United,1,0.8,4-1-4-1,52%,Chelsea,1,1.1,3-4-3,48%,109,1,defensive,1,High Press
+Leicester City,4,0.9,4-1-4-1,40%,Wolverhampton Wanderers,0,2.1,4-2-3-1,60%,110,0,offensive,3,Counter-Attack
+Brentford,0,0.9,3-5-2,55%,Aston Villa,4,2.8,4-2-3-1,45%,111,1,defensive,0,High Press
+Fulham,3,1.8,4-2-3-1,43%,Leeds United,2,1.6,4-2-3-1,57%,112,0,offensive,3,Counter-Attack
+Arsenal,1,1.0,4-3-3,59%,Southampton,1,0.7,4-4-2,41%,113,0,offensive,1,Possession
+Newcastle United,2,1.2,4-3-3,47%,Tottenham Hotspur,1,1.6,3-5-2,53%,114,0,offensive,3,Counter-Attack
+Bournemouth,0,0.4,4-2-3-1,45%,West Ham United,2,1.9,4-2-3-1,55%,115,1,defensive,0,Low Block
+Manchester City,1,1.0,4-3-3,64%,Leicester City,0,0.7,3-4-3,36%,116,0,offensive,3,Possession
+Southampton,0,1.3,3-5-2,56%,Crystal Palace,1,0.9,4-3-3,44%,117,0,offensive,0,Possession
+Aston Villa,0,0.4,4-2-3-1,41%,Newcastle United,4,3.4,4-3-3,59%,118,1,defensive,0,Low Block
+Tottenham Hotspur,3,2.0,3-5-2,69%,Bournemouth,2,0.5,3-5-1-1,31%,119,0,offensive,3,Possession
+Chelsea,1,1.4,3-4-3,59%,Brighton & Hove Albion,4,2.4,4-2-3-1,41%,120,1,defensive,0,High Press
+Wolverhampton Wanderers,1,0.6,4-2-3-1,42%,Brentford,1,1.4,4-3-3,58%,121,1,defensive,1,Low Block
+Everton,0,0.9,4-2-3-1,44%,Fulham,0,1.9,4-2-3-1,56%,122,1,defensive,1,Low Block
+Leeds United,2,1.8,4-2-3-1,32%,Liverpool,1,1.7,4-1-2-1-2,68%,123,0,offensive,3,Counter-Attack
+Nottingham Forest,0,0.4,4-3-3,31%,Arsenal,5,2.3,4-3-3,69%,124,1,defensive,0,Low Block
+West Ham United,0,1.1,4-2-3-1,47%,Manchester United,1,1.2,4-2-3-1,53%,125,1,defensive,0,Low Block
+Bournemouth,3,1.5,4-4-2,40%,Leeds United,4,2.2,4-2-3-1,60%,126,1,defensive,0,Low Block
+Brighton & Hove Albion,3,1.5,4-2-3-1,71%,Wolverhampton Wanderers,2,1.2,4-3-3,29%,127,0,offensive,3,Possession
+Fulham,1,1.0,4-2-3-1,30%,Manchester City,2,2.1,4-3-3,70%,128,1,defensive,0,Low Block
+Brentford,2,1.5,4-3-3,52%,Nottingham Forest,2,1.5,4-3-1-2,48%,129,0,offensive,1,Possession
+Leicester City,2,2.3,4-1-4-1,51%,Everton,0,1.2,4-3-3,49%,130,0,offensive,3,Possession
+Arsenal,1,2.1,4-3-3,55%,Chelsea,0,0.3,4-2-3-1,45%,131,0,offensive,3,Possession
+Newcastle United,4,0.9,4-3-3,45%,Southampton,1,1.7,4-2-3-1,55%,132,0,offensive,3,Counter-Attack
+Crystal Palace,2,1.0,4-3-3,58%,West Ham United,1,0.3,4-2-3-1,42%,133,0,offensive,3,Possession
+Manchester United,1,0.5,4-2-3-1,58%,Aston Villa,3,0.6,4-2-2-2,42%,134,1,defensive,0,High Press
+Liverpool,2,1.2,4-1-2-1-2,53%,Tottenham Hotspur,1,1.2,5-3-2,47%,135,0,offensive,3,Possession
+Brentford,2,1.3,3-5-2,26%,Manchester City,1,1.6,4-3-3,74%,136,0,offensive,3,Counter-Attack
+Leeds United,3,1.1,4-2-3-1,45%,Tottenham Hotspur,4,1.8,3-4-3,55%,137,1,defensive,0,Low Block
+Crystal Palace,0,1.2,4-3-3,68%,Nottingham Forest,1,1.1,4-3-3,32%,138,1,defensive,0,High Press
+Leicester City,2,1.8,4-1-4-1,46%,West Ham United,0,1.4,4-2-3-1,54%,139,0,offensive,3,Counter-Attack
+Southampton,1,1.1,5-3-2,40%,Liverpool,3,1.9,4-3-3,60%,140,1,defensive,0,Low Block
+Everton,0,0.8,4-3-3,64%,Bournemouth,3,2.4,4-4-2,36%,141,1,defensive,0,High Press
+Chelsea,0,0.3,3-4-3,51%,Newcastle United,1,1.0,4-3-3,49%,142,1,defensive,0,High Press
+Arsenal,2,2.1,4-3-3,62%,Wolverhampton Wanderers,0,0.7,5-3-2,38%,143,0,offensive,3,Possession
+Aston Villa,2,1.5,4-4-2,35%,Brighton & Hove Albion,1,0.6,4-2-3-1,65%,144,0,offensive,3,Counter-Attack
+Manchester United,2,2.5,4-2-3-1,47%,Fulham,1,1.4,4-2-3-1,53%,145,0,offensive,3,Counter-Attack
+Tottenham Hotspur,2,1.1,3-4-3,61%,Brentford,2,2.0,3-5-2,39%,146,1,defensive,1,High Press
+Fulham,3,2.5,4-2-3-1,64%,Crystal Palace,0,0.4,4-3-3,36%,147,0,offensive,3,Possession
+Wolverhampton Wanderers,2,0.8,4-3-3,42%,Everton,1,1.7,4-3-3,58%,148,1,defensive,3,Low Block
+Newcastle United,3,1.9,4-3-3,40%,Leicester City,0,0.5,4-2-3-1,60%,149,0,offensive,3,Counter-Attack
+Brighton & Hove Albion,3,0.6,4-2-3-1,66%,Southampton,1,1.9,4-2-3-1,34%,150,1,defensive,3,High Press
+Liverpool,3,2.7,4-3-3,52%,Aston Villa,1,1.4,4-4-2,48%,151,0,offensive,3,Possession
+West Ham United,1,1.0,4-2-3-1,34%,Arsenal,3,2.1,4-3-3,66%,152,1,defensive,0,Low Block
+Bournemouth,0,0.5,5-3-2,40%,Chelsea,2,1.8,4-3-3,60%,153,1,defensive,0,Low Block
+Nottingham Forest,0,0.7,4-3-3,35%,Manchester United,3,2.4,4-2-3-1,65%,154,1,defensive,0,Low Block
+Manchester City,3,4.3,4-3-3,69%,Leeds United,1,0.6,4-3-3,31%,155,0,offensive,3,Possession
+Brentford,2,1.6,3-5-2,37%,West Ham United,0,1.3,3-4-3,63%,156,0,offensive,3,Counter-Attack
+Leicester City,1,1.0,4-2-3-1,43%,Liverpool,2,2.2,4-3-3,57%,157,1,defensive,0,Low Block
+Manchester United,1,2.0,4-2-3-1,54%,Wolverhampton Wanderers,0,0.7,4-2-3-1,46%,158,0,offensive,3,Possession
+Leeds United,0,0.4,4-2-3-1,40%,Newcastle United,0,2.2,4-3-3,60%,159,1,defensive,1,Low Block
+Southampton,1,0.8,3-4-3,38%,Fulham,2,1.5,4-2-3-1,62%,160,1,defensive,0,Low Block
+Crystal Palace,2,1.6,4-2-3-1,41%,Bournemouth,0,0.6,4-4-2,59%,161,0,offensive,3,Counter-Attack
+Everton,1,0.1,5-3-2,26%,Manchester City,1,1.7,4-3-3,74%,162,1,defensive,1,Low Block
+Arsenal,4,2.9,4-3-3,32%,Brighton & Hove Albion,2,1.2,4-2-3-1,68%,163,0,offensive,3,Counter-Attack
+Aston Villa,2,1.0,4-4-2,41%,Tottenham Hotspur,0,0.7,3-4-3,59%,164,0,offensive,3,Counter-Attack
+Chelsea,1,0.9,4-3-3,71%,Nottingham Forest,1,1.4,4-3-3,29%,165,1,defensive,1,High Press
+Liverpool,1,0.9,4-3-3,72%,Brentford,3,1.6,3-5-2,28%,166,1,defensive,0,High Press
+Fulham,1,1.7,4-2-3-1,39%,Leicester City,0,1.7,4-2-3-1,61%,167,0,offensive,3,Counter-Attack
+Brighton & Hove Albion,4,2.2,4-2-3-1,51%,Everton,1,1.3,4-3-3,49%,168,0,offensive,3,Possession
+Newcastle United,0,1.0,4-3-3,34%,Arsenal,0,1.1,4-3-3,66%,169,0,offensive,1,Counter-Attack
+Bournemouth,0,0.6,4-4-2,42%,Manchester United,3,2.2,4-2-3-1,58%,170,1,defensive,0,Low Block
+Nottingham Forest,1,1.4,4-3-1-2,37%,Southampton,0,0.5,3-1-4-2,63%,171,0,offensive,3,Counter-Attack
+West Ham United,2,1.4,4-3-3,38%,Leeds United,2,1.6,4-2-3-1,62%,172,1,defensive,1,Low Block
+Tottenham Hotspur,4,1.4,3-4-3,53%,Crystal Palace,0,0.8,4-2-3-1,47%,173,0,offensive,3,Possession
+Wolverhampton Wanderers,1,0.9,4-2-3-1,44%,Aston Villa,1,1.8,4-4-2,56%,174,1,defensive,1,Low Block
+Manchester City,1,2.0,3-2-4-1,52%,Chelsea,0,0.4,4-2-3-1,48%,175,0,offensive,3,Possession
+Chelsea,1,2.1,3-5-2,52%,Fulham,2,1.0,4-2-3-1,48%,176,0,offensive,0,Possession
+Leeds United,1,2.4,4-2-3-1,48%,Aston Villa,2,1.2,4-4-2,52%,177,0,offensive,0,Counter-Attack
+Manchester City,1,0.6,4-3-3,70%,Manchester United,2,1.7,4-2-3-1,30%,178,1,defensive,0,High Press
+Leicester City,0,1.0,4-2-3-1,61%,Nottingham Forest,2,2.4,4-3-1-2,39%,179,1,defensive,0,High Press
+West Ham United,0,1.1,4-3-3,42%,Wolverhampton Wanderers,1,0.9,4-2-3-1,58%,180,1,defensive,0,Low Block
+Liverpool,0,1.0,4-1-2-1-2,39%,Brighton & Hove Albion,3,1.9,4-2-3-1,61%,181,1,defensive,0,Low Block
+Southampton,2,1.2,4-2-3-1,48%,Everton,1,1.4,3-4-3,52%,182,0,offensive,3,Counter-Attack
+Bournemouth,0,0.6,4-4-1-1,50%,Brentford,2,1.4,4-3-3,50%,183,1,defensive,0,High Press
+Fulham,0,1.1,4-2-3-1,38%,Newcastle United,1,2.2,4-3-3,62%,184,1,defensive,0,Low Block
+Crystal Palace,0,0.7,4-2-3-1,39%,Chelsea,1,1.5,4-2-3-1,61%,185,1,defensive,0,Low Block
+Arsenal,2,1.8,4-3-3,49%,Tottenham Hotspur,0,1.6,3-4-3,51%,186,0,offensive,3,Counter-Attack
+Manchester United,1,2.1,4-2-3-1,60%,Crystal Palace,1,0.5,4-2-3-1,40%,187,0,offensive,1,Possession
+Tottenham Hotspur,2,0.8,3-4-3,42%,Manchester City,4,2.3,4-2-3-1,58%,188,1,defensive,0,Low Block
+Chelsea,0,1.6,3-4-3,52%,Liverpool,0,1.4,4-3-3,48%,189,0,offensive,1,Possession
