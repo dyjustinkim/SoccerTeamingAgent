@@ -9,6 +9,14 @@ python feature_classification/boruta_classification.py
 ```
 Once run, the classified features will be saved in ```boruta_confirmed_features.csv``` file.
 # Feature Segmentation
+Player features are segmented into sub-roles using K-means clustering by running the segmentation script:
+```
+python feature_segmentation/kmeans_clustering.py
+```
+Once run, each player is assigned a segmented position (e.g., CB0, CMF1, FW0), and the results are saved to:
+```
+player_clusters_by_position.csv
+```
 # Building Input Vectors
 
 # Model Training
