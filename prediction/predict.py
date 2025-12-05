@@ -4,10 +4,10 @@ import pandas as pd
 import joblib
 
 # load scaler
-scaler = joblib.load("input_scaler.pkl")
+scaler = joblib.load("../model_training/input_scaler.pkl")
 
 # load label mappings
-df = pd.read_csv("feature_classification/input_vectors.csv")
+df = pd.read_csv("../feature_classification/input_vectors.csv")
 formation_map = dict(zip(df["FormationLabel"], df["Formation"]))
 tstyle_map = dict(zip(df["TacticalStyleLabel"], df["TacticalStyle"]))
 strategy_map = dict(zip(df["StrategyLabel"], df["Strategy"]))
@@ -50,7 +50,7 @@ n_strategy = df["StrategyLabel"].nunique()
 
 # load trained model
 model = MultiOutputDNN(input_dim, n_form, n_tstyle, n_strategy)
-model.load_state_dict(torch.load("multi_output_dnn.pth"))
+model.load_state_dict(torch.load("../model_training/multi_output_dnn.pth"))
 model.eval()
 
 

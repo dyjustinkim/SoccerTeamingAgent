@@ -10,7 +10,7 @@ import joblib
 from datetime import datetime
 
 # load dataset
-df = pd.read_csv("feature_classification/input_vectors.csv")
+df = pd.read_csv("../feature_classification/input_vectors.csv")
 
 # prepare features (X) and labels (y)
 exclude = ["Formation", "FormationLabel", "TacticalStyle", "TacticalStyleLabel", "Strategy", "StrategyLabel", "opponent", "Squad"]
