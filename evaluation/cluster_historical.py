@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
+# Reverse table for strategy cluster of team 2 
 def reverse_table(df):
     df2 = pd.DataFrame({
     "match id": df["match id"],
@@ -19,6 +20,7 @@ def reverse_table(df):
     return df2
 
 
+# Assign points based on match result
 def expected_points1(row):
     if row["team1 goals"] == row["team2 goals"]:
         return 1
@@ -28,26 +30,35 @@ def expected_points1(row):
         return 0
     
 def clustering(df):
-    features = ["team1 goals", "team2 goals", "team1 xG", "team2 xG"]
+    # List of features to use in clustering
+    features = ["team1 goals", "team2 goals", 
+                "team1 xG", "team2 xG"]
     X = df[features].copy()
     X = df[features]
 
+    # Normalizing dataset features
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
+    # K=2, 2 clusters: offensive and defensive
     kmeans = KMeans(n_clusters=2, random_state=42)
     df["cluster"] = kmeans.fit_predict(X_scaled)
 
-    centroids = pd.DataFrame(kmeans.cluster_centers_, columns=features)
+    # Assigning labels to clusters; centroid w/ higher xG represents offensive
+    centroids = pd.DataFrame(kmeans.cluster_centers_, 
+                             columns=features)
     print("Cluster centroids (standardized):")
     print(centroids)
     offensive_cluster = centroids["team1 xG"].idxmax()
     defensive_cluster = centroids["team1 xG"].idxmin()
-    cluster_map = {offensive_cluster: "offensive", defensive_cluster: "defensive"}
+    cluster_map = {offensive_cluster: "offensive", 
+                   defensive_cluster: "defensive"}
     df["team1 tactics"] = df["cluster"].map(cluster_map)
     return df
 
+# Cluster possession based on >50 or <50 percent
 def possession_clustering(row):
+    # Cluster possession strategy based on tactics and higher/lower game possession
     if row["team1 tactics"] == "offensive" and int(row["team1 poss"].split("%")[0]) >= 50:
         return "Possession"
     elif row["team1 tactics"] == "offensive" and int(row["team1 poss"].split("%")[0]) < 50:

@@ -2,6 +2,7 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 
+# If strategy is in top k ranked results
 def hit_at_k(predictions, real_results, k):
     hits, formhits, strathits, allhits = 0, 0, 0, 0
     total = 0
@@ -35,19 +36,21 @@ def compute_mrr(predictions, real_results):
         for i, whole_strat in enumerate(historical_strats):
             formation, strat = pred_strat.split()[0], pred_strat.split()[2]
 
+            # Strategy matches exactly
             if whole_strat == pred_strat:
                 rank = i + 1
                 break
+            # Only formation match is also counted as a hit
             if whole_strat.split()[0] == formation:
-                if formrank == None:
-                    formrank = i + 1
+                if formrank == None: formrank = i + 1
+            # Only strategy match is also counted as a hit
             if whole_strat.split()[2] == strat:
-                if stratrank == None:
-                    stratrank = i + 1
+                if stratrank == None: stratrank = i + 1
+            # Formation match and strategy match counted as hits
             if whole_strat.split()[0] == formation or whole_strat.split()[2] == strat:
-                if allrank == None:
-                    allrank = i + 1
+                if allrank == None: allrank = i + 1
 
+        # Calculate MRR with reciprocal of rank
         team_metrics = []
         for metric in [rank, formrank, stratrank, allrank]:
             if metric == None:
@@ -56,9 +59,11 @@ def compute_mrr(predictions, real_results):
                 team_metrics.append(1/metric)
         rr_scores.append(team_metrics)
 
+    # Find average MRR for all predictions
     result = [sum(x) for x in zip(*rr_scores)]
     return [x / len(rr_scores) for x in result]
 
+# Average points based on match results
 def average_points(predictions, real_results):
         avg_points = []
 
@@ -163,10 +168,10 @@ for team, whole_strats in real_results.items():
     avg_games += games
     avg_strats += unique_strats
 
-#print(avg_games/num_teams, avg_strats/num_teams)
+print(avg_games/num_teams, avg_strats/num_teams)
 
 #graph_topk(k1, k3, k5)
-graph_single(mrr, 1, "MRR Score")
+#graph_single(mrr, 1, "MRR Score")
 #graph_single(points, 3, "Average Historical Points")
 
         

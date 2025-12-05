@@ -10,33 +10,36 @@ def evaluate_historical(file_name, output_name):
         if team_name not in all_teams_strats:
             all_teams_strats[team_name] = {}
 
+        # Obtain full name of strategy (formation, tactics, and strategy)
         team_strats = all_teams_strats[team_name]
         formation = row["team1 formation"]
         tactics = row["team1 tactics"]
         strat = row["team1 strat"]
         full_strat = f"{formation} {tactics} {strat}"
 
+        # Calculate number of strategy appearances, points, goal difference, xGD
         gd = row["team1 goals"] - row["team2 goals"]
         xgd = row["team1 xG"] - row["team2 xG"]
         points = row["team1 points"]
         new_strat = [1, points, gd, xgd]
 
+        # Incrememnt statitics if strategy used multiple times
         if full_strat not in team_strats:
             all_teams_strats[team_name][full_strat] = new_strat
-            
-
         else:
-            all_teams_strats[team_name][full_strat]  = [a + b for a,b in zip(new_strat, team_strats[full_strat])]
+            all_teams_strats[team_name][full_strat] = [a + b for a,b in 
+                                                       zip(new_strat, team_strats[full_strat])]
 
-
-
+    # Average statistics across all matches and rank by stats
     for team in list(all_teams_strats.keys()):
         d = all_teams_strats[team]
         d_normalized = {
             k: [v[0]] + [x / v[0] for x in v[1:]]  
             for k, v in d.items()
         }
-        all_teams_strats[team] = dict(sorted(d_normalized.items(), key=lambda item: (item[1][1], item[1][2]), reverse=True))
+        all_teams_strats[team] = dict(sorted(d_normalized.items(), 
+                                             key=lambda item: 
+                                             (item[1][1], item[1][2]), reverse=True))
 
 
     directory = "evaluation"   
