@@ -86,17 +86,13 @@ def scrape_player_data(team_url, year, output_file_name):
         else:
             df = get_table(df)
     
-    output = output_file_name + ".csv"
-    df.to_csv(output, index=False)
+    df.to_csv(output_file_name, index=False)
     driver.quit()
 
-def scrape_team_data():
-    None #TODO
-
-scrape_player_data(
-    "https://www.whoscored.com/teams/32/show/england-manchester-united", 
+"""scrape_player_data(
+    "https://www.whoscored.com/teams/30/show/england-tottenham", 
     "Premier League - 2023/2024", 
-    "manunited2425")
+    "manunited2425")"""
 
 
 """
