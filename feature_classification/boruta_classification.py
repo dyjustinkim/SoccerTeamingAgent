@@ -1,14 +1,18 @@
 import pandas as pd
 import numpy as np
+from datetime import datetime
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_score
 from boruta import BorutaPy
 
+# start time
+start_time = datetime.now()
+print(f'formatted start time is: {start_time.strftime("%Y-%m-%d %H:%M:%S")}')
 
 # just run this file, replacing DATASET_PATH with whatever dataset is necessary
 # the important features are in confirmed
 
-DATASET_PATH = "feature_classification/sampledata/tottenham2425.csv"
+DATASET_PATH = "feature_classification/sampledata/tottenham2122.csv"
 
 # load the dataset using pandas
 df = pd.read_csv(DATASET_PATH)
@@ -88,7 +92,7 @@ rf = RandomForestClassifier(n_estimators=1000, random_state=42, n_jobs=-1)
 scores = cross_val_score(rf, X, y, cv=5)
 
 print(f"Random Forest accuracy using Boruta features: mean: {scores.mean()}, standard deviation: {scores.std()}")
-boruta_selector = BorutaPy(rf, n_estimators='auto', random_state=42, verbose=2, max_iter=200)
+boruta_selector = BorutaPy(rf, n_estimators='auto', random_state=42, verbose=2, max_iter=200, perc=70)
 boruta_selector.fit(X, y)
 
 # Get feature importance results based on Boruta flags
@@ -103,15 +107,18 @@ rejected = np.array(rejected)
 
 print(f"Confirmed features: {confirmed}")
 print(f"Weak features: {weak}")
-print(f"Confirmed and weak features: {confirmed + weak}")
+print(f"Confirmed and weak features: {list(confirmed) + list(weak)}")
 print(f"Rejected features: {rejected}")
 
 # Print out distribution of the positions relative to the confirmed and weak features
 # (What is the score of the features for each position)
-df_confirmed_and_weak = df[['Name'] + ['Target'] + list(confirmed) + list(weak)].copy()
+df_confirmed_and_weak = df[['Target'] + list(confirmed) + list(weak)].copy()
 
 for c in confirmed:
     df_confirmed_and_weak[c] = pd.to_numeric(df_confirmed_and_weak[c], errors='coerce')
+
+for w in weak:
+    df_confirmed_and_weak[w] = pd.to_numeric(df_confirmed_and_weak[w], errors='coerce')
 
 summary = df_confirmed_and_weak.groupby('Target')[confirmed].mean().T.fillna(0)
 print(f'Summary: {summary}')
@@ -120,3 +127,9 @@ print(f'Summary: {summary}')
 output_path = "boruta_confirmed_features.csv"
 df_confirmed_and_weak.to_csv(output_path, index=False)
 print(f"Saved Boruta feature data to {output_path}")
+
+# end time
+end_time = datetime.now()
+print(f'formatted end time is: {end_time.strftime("%Y-%m-%d %H:%M:%S")}')
+print(f'elapsed time is {end_time - start_time} seconds')
+

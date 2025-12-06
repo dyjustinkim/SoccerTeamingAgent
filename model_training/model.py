@@ -7,9 +7,10 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import joblib
+from datetime import datetime
 
 # load dataset
-df = pd.read_csv("feature_classification/input_vectors.csv")
+df = pd.read_csv("../feature_classification/input_vectors.csv")
 
 # prepare features (X) and labels (y)
 exclude = ["Formation", "FormationLabel", "TacticalStyle", "TacticalStyleLabel", "Strategy", "StrategyLabel", "opponent", "Squad"]
@@ -71,6 +72,8 @@ epochs = 100
 batch_size = 16
 
 # train model
+# start time
+start_time = datetime.now()
 for epoch in range(epochs):
     model.train()
     permutation = torch.randperm(X_train.size()[0])
@@ -92,6 +95,12 @@ for epoch in range(epochs):
     if (epoch + 1) % 10 == 0:
         print(f"Epoch [{epoch+1}/{epochs}], Loss: {total_loss:.4f}")
 
+# end time
+end_time = datetime.now()
+print(f'formatted start time is: {start_time.strftime("%Y-%m-%d %H:%M:%S")}')
+print(f'formatted end time is: {end_time.strftime("%Y-%m-%d %H:%M:%S")}')
+print(f'elapsed time is {end_time - start_time} seconds')
+
 # evaluate model
 model.eval()
 with torch.no_grad():
@@ -109,96 +118,7 @@ print("\n--- Strategy ---")
 print(classification_report(y_strategy_test, pred_s, zero_division=0))
 
 
-
-# predict strategies for all teams in match_results.csv
-match_data = pd.read_csv("feature_classification/match_data/tottenham_match_results.csv")
-unique_opponents = match_data["Opponent"].dropna().str.strip().str.lower().unique()
-print(f"Found {len(unique_opponents)} unique opponents to predict.")
-
-formation_map = dict(zip(df["FormationLabel"], df["Formation"]))
-tstyle_map = dict(zip(df["TacticalStyleLabel"], df["TacticalStyle"]))
-strategy_map = dict(zip(df["StrategyLabel"], df["Strategy"]))
-results = []
-
-for opponent_name in unique_opponents:
-    # find all data rows for that opponent in the feature dataset
-    sample = df[df["opponent"].str.lower() == opponent_name]
-    if sample.empty:
-        results.append({
-            "Opponent": opponent_name.title(),
-            "Predicted_Formation": "N/A",
-            "Predicted_TacticalStyle": "N/A",
-            "Predicted_Strategy": "N/A"
-        })
-        continue
-
-    # average across all matches with this opponent
-    X_sample = sample.select_dtypes(include=["number"]).drop(
-        columns=[c for c in exclude if c in sample.columns],
-        errors="ignore"
-    ).fillna(0).mean(axis=0).to_frame().T
-
-    # scale and convert to tensor
-    X_scaled = scaler.transform(X_sample)
-    X_tensor = torch.tensor(X_scaled, dtype=torch.float32)
-
-    # predict
-    with torch.no_grad():
-        out_f, out_t, out_s = model(X_tensor)
-        pred_f = torch.argmax(out_f, dim=1).item()
-        pred_t = torch.argmax(out_t, dim=1).item()
-        pred_s = torch.argmax(out_s, dim=1).item()
-
-    results.append({
-        "Opponent": opponent_name.title(),
-        "Predicted_Formation": formation_map.get(pred_f, pred_f),
-        "Predicted_TacticalStyle": tstyle_map.get(pred_t, pred_t),
-        "Predicted_Strategy": strategy_map.get(pred_s, pred_s)
-    })
-
-# save to result.txt
-with open("result.txt", "w") as f:
-    f.write("=== Tactical Predictions per Unique Opponent ===\n\n")
-    for r in results:
-        f.write(f"Opponent: {r['Opponent']}\n")
-        f.write(f"🔹 Formation: {r['Predicted_Formation']}\n")
-        f.write(f"🔹 Tactical Style: {r['Predicted_TacticalStyle']}\n")
-        f.write(f"🔹 Strategy: {r['Predicted_Strategy']}\n")
-        f.write("-" * 45 + "\n")
-
-print("Saved predictions for all unique opponents to result.txt!")
-
-
-
-
-# predict function to predict strategy for a given opponent
-def predict_strategy(opponent_name):
-    opponent_name = opponent_name.strip().lower()
-    sample = df[df["opponent"].str.lower() == opponent_name]
-    if sample.empty:
-        print(f"No data found for opponent '{opponent_name}'.")
-        return None
-
-    X_sample = sample.select_dtypes(include=["number"]).drop(
-        columns=[c for c in exclude if c in sample.columns],
-        errors="ignore"
-    ).fillna(0)
-    X_sample = scaler.transform(X_sample)
-    X_sample = torch.tensor(X_sample, dtype=torch.float32)
-
-    model.eval()
-    with torch.no_grad():
-        out_f, out_t, out_s = model(X_sample)
-        pred_f = torch.argmax(out_f, dim=1).item()
-        pred_t = torch.argmax(out_t, dim=1).item()
-        pred_s = torch.argmax(out_s, dim=1).item()
-
-    formation_map = dict(zip(df["FormationLabel"], df["Formation"]))
-    tstyle_map = dict(zip(df["TacticalStyleLabel"], df["TacticalStyle"]))
-    strategy_map = dict(zip(df["StrategyLabel"], df["Strategy"]))
-
-    print(f"\n=== Tactical Recommendation vs {opponent_name.title()} ===")
-    print(f"🔹 Formation: {formation_map.get(pred_f, pred_f)}")
-    print(f"🔹 Tactical Style: {tstyle_map.get(pred_t, pred_t)}")
-    print(f"🔹 Strategy: {strategy_map.get(pred_s, pred_s)}")
-
+# Save scaler and pytorch model
+joblib.dump(scaler, "input_scaler.pkl")
+torch.save(model.state_dict(), "multi_output_dnn.pth")
+print("Model and scaler saved")
