@@ -5,7 +5,9 @@ import time
 
 t0 = time.perf_counter() 
 logs = pd.read_csv("tottenham_match_cleaned.csv")
-centroids = pd.read_csv("player_clusters_by_position.csv")
+centroids = pd.read_csv(r"..\feature_classification\player_clusters_by_position.csv")
+
+
 
 t_load0 = time.perf_counter()
 t_load1 = time.perf_counter()
@@ -59,12 +61,12 @@ t_cluster1 = time.perf_counter()
 
 # 3. Save result
 t_save0 = time.perf_counter()
-segmented_df.to_csv("player_match_with_segments2.csv", index=False)
+segmented_df.to_csv("player_match_with_segments.csv", index=False)
 t_save1 = time.perf_counter()
 
 t1 = time.perf_counter()  # end total timing
 
-print("Saved → player_match_with_segments2.csv")
+print("Saved → player_match_with_segments.csv")
 
 print("\nTiming (seconds):")
 print(f"load_csvs          : {t_load1 - t_load0:.6f}")

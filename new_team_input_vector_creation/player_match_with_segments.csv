@@ -1,0 +1,12 @@
+Player,Pos,AccLB,InAccLB,AccSP,InAccSP,InAccCr,AccFrK,Total Dribbles,KG,MappedPos,SegmentedPosition
+Fraser Forster,GK,7,8,16,8,0,4,0,90,GK,GK0
+Pape Matar Sarr,DM,0,0,11,2,0,0,2,27,CMF,CMF0
+Rodrigo Bentancur,DM,3,3,35,11,1,3,2,90,CMF,CMF1
+Yves Bissouma,DM,0,0,19,5,0,1,0,63,CMF,CMF0
+James Maddison,AM,1,0,13,3,0,0,1,27,Wing,Wing1
+Dejan Kulusevski,"AM,RW",0,1,18,9,3,0,7,90,Wing,Wing0
+Son Heung-min,LW,0,1,15,5,3,0,0,63,Wing,Wing1
+Timo Werner,LW,1,0,11,4,1,0,1,27,Wing,Wing1
+Brennan Johnson,RW,0,0,5,7,2,0,0,63,Wing,Wing1
+Dominic Solanke,FW,0,0,17,4,0,0,3,90,FW,FW1
+Archie Gray,CB,3,2,60,6,0,2,0,90,CB,CB0
