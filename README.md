@@ -2,6 +2,8 @@
 Program to Predict Soccer Formations with Machine Learning
 
 # Data Collection
+scraper.py is used for the initial data step. instructions on how to run it can be found at the bottom of the file.
+
 # Feature Classification
 Collected data can be classified into features by running ```feature_classification/boruta_classification.py``` script with the saved player data csv file.
 ```
