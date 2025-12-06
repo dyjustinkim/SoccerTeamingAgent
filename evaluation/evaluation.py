@@ -170,9 +170,9 @@ for team, whole_strats in real_results.items():
 
 print(avg_games/num_teams, avg_strats/num_teams)
 
-#graph_topk(k1, k3, k5)
-#graph_single(mrr, 1, "MRR Score")
-#graph_single(points, 3, "Average Historical Points")
+graph_topk(k1, k3, k5)
+graph_single(mrr, 1, "MRR Score")
+graph_single(points, 3, "Average Historical Points")
 
         
 

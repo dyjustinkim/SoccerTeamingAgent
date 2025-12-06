@@ -1,11 +1,11 @@
 import time
-from initial_scraper import scrape_player_data
+from data_collection.initial_scraper import scrape_player_data
 import os
 from feature_classification.boruta_classification import boruta_classification
 from feature_classification.kmeans_clustering import kmeans_clustering
-from match_scraper import scrape_season_fixtures
-from match_scraper import get_match_results
-from match_scraper import get_league_table
+from data_collection.match_scraper import scrape_season_fixtures
+from data_collection.match_scraper import get_match_results
+from data_collection.match_scraper import get_league_table
 from feature_classification.matchinputformat import matchinputformat
 from feature_classification.matchlevelinputs import matchlevelinputs
 from feature_classification.team_vector_build import team_vector_build
@@ -28,7 +28,7 @@ def run_with_retries(scraper_func, url, filename, param2, max_attempts=3):
         except Exception as e:
             print(f"Failure detected: {type(e).__name__}: {e}")
             if attempt >= max_attempts:
-                print("Max fail aattempts reach. Please restart.")
+                print("Max fail attempts reach. Please restart.")
 
 def main():
     new_folder_path = os.path.join(os.getcwd(), "tot24-25")

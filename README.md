@@ -1,27 +1,10 @@
 # SoccerTeamingAgent
 Program to Predict Soccer Formations with Machine Learning
 
-# Data Collection
-# Feature Classification
-Collected data can be classified into features by running ```feature_classification/boruta_classification.py``` script with the saved player data csv file.
-```
-python feature_classification/boruta_classification.py
-```
-Once run, the classified features will be saved in ```boruta_confirmed_features.csv``` file.
-# Feature Segmentation
-# Building Input Vectors
+# Main Function
+To run the entire code process from initial data collection to output prediction, run the main file. 
 
-# Model Training
-Train the model using the input vectors by running ```model.py``` script
-```
-python model.py
-```
-Once run, evaluation results will be printed and the model and scaler will be saved for future use
-model path: multi_output_dnn.pth
-scaler path: input_scaler.pkl
+The Main function may crash due to high volality in the web driver functions; in this case, it is best to delete the output folder (tot24-25) before re-running the function. 
 
-# Prediction
-Run the ```predict.py``` script and input the teams (comma-separated) that you want prediction for
-```
-python predict.py
-```
+# Evaluation
+Run the evaluation.py score to evaluate the predictions against historical results.

@@ -2,7 +2,6 @@ from selenium import webdriver
 import pandas as pd
 from selenium.webdriver.common.by import By
 import time
-import re
 import os
 
 
@@ -81,7 +80,7 @@ def get_match_results(link, output_file):
 def get_league_table(link, output_file):
     driver = webdriver.Chrome()
     driver.get(link)
-    table = driver.find_element(By.ID, "results2024-202591_overall")
+    table = driver.find_element(By.XPATH, "/html/body/div[4]/div[5]/div[3]/div[4]/div[2]")
     html = table.get_attribute("outerHTML")
     df = pd.read_html(html)[0]
     df = df[["Rk", "Squad", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts", "Pts/MP", "xG", "xGA", "xGD", "xGD/90"]]
