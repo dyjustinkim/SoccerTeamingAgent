@@ -19,6 +19,21 @@ player_clusters_by_position.csv
 ```
 # Building Input Vectors
 
+Match level player statistics can be collected by downloading the html file from fbref.com --> Searching for a team --> Scores and Fixtures --> Match Report
+
+Run the three files under new_team_input_vector_creation folder in order
+
+```
+python new_team_input_vector_creation/match_level_HTML_parser.py
+python new_team_input_vector_creation/match_level_processer.py
+python new_team_input_vector_creation/match_level_input_vector_creation.py 
+```
+
+Once run, each player ia assigned a segmented posiion for that match, and the results will be saved to: 
+```
+player_match_with_segments.csv
+```
+
 # Model Training
 Train the model using the input vectors by running ```model.py``` script
 ```
